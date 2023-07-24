@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detik Finance</title>
+
+  <!-- Plugin Css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../../Assets/Plugin/animate.css">
+
+  <!-- Plugin Js -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="../../../Assets/Template.css" />
+  <link rel="stylesheet" href="../../../Assets/External/Register/Css/Index.css" />
+
+  <script src="../../../Assets/External/Template.js"></script>
+  <script src="../../../Assets/External/Register/Js/Index.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-first fixed-top">
+    <a class="navbar-brand scrollable" href="../../../index.html#hero">
+      <img src="../../../Assets/Logo.svg" alt="logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link scrollable" href="../../../index.html#about-section">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollable" href="../../../index.html#mekanisme-section">Mechanism</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollable" href="../../../index.html#agregator-section">Latest Update</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javasripr:void(0)">
+            <button class="bg-null color-first" id="btn_register">
+              Register
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="content">
+    <div id="register">
+      <div id="header-title">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-10 mx-auto animated both fadeIn ">
+              <h1 class="color-null">Registrasi</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="form-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-11 mx-auto bg-null py-3" id="form">
+            <form action="" method="post">
+              <div class="row py-3">
+                <div class="col-12">
+                  <input type="text" name="namaperusahaan" class="form-control">
+                  <span class="placeholder-text">Nama Perusahaan <span class="text-danger">*</span></span>
+                </div>
+              </div>
+              <div class="row py-3">
+                <div class="col-12">
+                  <input type="email" name="email" class="form-control">
+                  <span class="placeholder-text">Email <span class="text-danger">*</span></span>
+                </div>
+              </div>
+              <div class="row py-3">
+                <div class="col-12">
+                  <input type="number" name="nomortelepon" class="form-control">
+                  <span class="placeholder-text">Nomor Telepon <span class="text-danger">*</span></span>
+                  <small class="text-secondary">Isi hanya angka</small>
+                </div>
+              </div>
+              <div class="row py-3">
+                <div class="col-12">
+                  <textarea name="tentang" class="form-control"></textarea>
+                  <span class="placeholder-text">Tentang Perusahaan (Max. 200 character) <span
+                      class="text-danger">*</span></span>
+                </div>
+              </div>
+              <div class="row py-3">
+                <div class="col-lg-5">
+                  <input type="file" name="logoperusahaan" class="form-control" style="display: none;"
+                    accept=".png, .jpg, .jpeg">
+                  <input type="text" name="logoperusahaan_text" class="form-control" readonly="readonly" disabled>
+                  <i class="fa fa-plus-circle" id="plus"></i>
+                  <span id="placeholder-logo">Upload file logo <span class="text-danger">*</span></span>
+                </div>
+                <div class="col-lg-7">
+                  <ol>
+                    <li>Format file: .png, .jpg, .jpeg</li>
+                    <li>Maksimal ukuran file 200KB</li>
+                    <li>Hindari penggunaan logo berwarna putih</li>
+                    <li>Minimal lebar 300px</li>
+                  </ol>
+                </div>
+              </div>
+              <div id="mobile-top">
+                <div class="row py-3">
+                  <div class="col-12">
+                    <input type="file" name="profilperusahaan" class="form-control" style="display: none;" accept=".pdf">
+                    <input type="text" name="profilperusahaan_text" class="form-control" readonly="readonly" disabled>
+                    <button id="choosefile">Upload file</button>
+                    <span class="placeholder-text placeholder-file">Profil Perusahaan atau Deck (opsional) <span
+                        class="text-danger">*</span></span>
+                    <small class="text-secondary">Format file .pdf , maksimal size 20mb</small>
+                  </div>
+                </div>
+                <div class="row py-3">
+                  <div class="col-12">
+                    <input type="text" name="linkwebsite" class="form-control">
+                    <span class="placeholder-text">Link website <span class="text-danger">*</span></span>
+                    <small class="text-secondary">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau
+                      http://).</small>
+                  </div>
+                </div>
+                <div class="row py-3">
+                  <div class="col-12" style="font-size: 12px;">
+                    <input type="checkbox" name="check"> Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku
+                  </div>
+                </div>
+                <div class="row py-3">
+                  <div class="col-12 text-center">
+                    <button class="bg-first color-null" id="sbt_register">Register</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="bg-first color-null">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-11">
+          <img src="../../../Assets/Logo.svg" alt="logo" />
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-8 col-md-7 col-11 my-2">
+          <b class="font-semibold color-null">Detikfinance memberikan ruang kepada para startup di Indonesia
+            untuk menunjukkan, serta mempromosikan brand mereka untuk
+            mendapatkan perhatian dari venture capital atau angel investor</b>
+        </div>
+        <div class="col-lg-4 col-md-5 col-11 my-2 text-right logokiri">
+          <span class="display-inline-block">
+            <img src="../../../Assets/External/Home/Icon/twitter2.svg" alt="Logo Twitter" />
+          </span>
+          <span class="display-inline-block">
+            <img src="../../../Assets/External/Home/Icon/instagram.svg" alt="Logo Instagram" /></span>
+          <span class="display-inline-block">
+            <img src="../../../Assets/External/Home/Icon/facebook2.svg" alt="Logo Facebook" /></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <small class="color-null">
+            © 2023 Detikcom. All rights reserved
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

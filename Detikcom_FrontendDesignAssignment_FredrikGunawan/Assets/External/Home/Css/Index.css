@@ -1,0 +1,236 @@
+body {
+  background-color: var(--third-color);
+}
+
+/* ============================== HERO SECTION ====================== */
+#hero,
+#mekanisme-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#hero {
+  background-image: url(../Images/Hero.png);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 166px;
+  width: 100%;
+}
+
+#hero h1,
+#hero h2,
+#hero h6 {
+  color: var(--null-color);
+}
+
+#hero h1 {
+  font-size: 48px;
+  font-family: "montserrat-extrabold";
+  margin: 20px 0px;
+}
+
+#hero h2 {
+  font-size: 24px;
+  font-family: "montserrat-semibold";
+}
+
+#hero h6 {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* ============================== ABOUT SECTION ====================== */
+#about-section {
+  padding: 100px 0px;
+}
+
+#video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video-overlay i {
+  font-size: 42px;
+  color: rgba(214, 214, 214, 0.77);
+  transition: color 0.3s;
+}
+
+#video-overlay i:hover {
+  color: var(--second-color);
+}
+
+#about-section-info b {
+  font-size: 20px;
+  font-family: "montserrat-bold";
+}
+
+#about-section-info p {
+  font-size: 14px;
+  font-family: "montserrat-regular";
+  margin: 20px 0px;
+}
+
+#about-section-info span {
+  font-size: 14px;
+}
+
+#about-section-info img {
+  width: 21px;
+  height: 21px;
+  margin: 0px 8px;
+}
+
+/* ============================== MEKANISME SECTION ====================== */
+#mekanisme-section {
+  background-image: url("../Images/mekanisme-section.png");
+  width: 100%;
+  height: auto;
+  padding: 130px 0px;
+}
+
+#mekanisme-section h1 {
+  margin: 0px -15px;
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.cards {
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.cards img {
+  width: 55px;
+  height: 55px;
+}
+
+.cards b {
+  font-size: 18px;
+  margin-left: -15px;
+}
+
+ol li {
+  font-size: 12px;
+}
+
+/* ============================== RUNNING SECTION ====================== */
+#running-logo-section {
+  padding: 81px 0px;
+}
+
+#running-logo-section b {
+  font-size: 18px;
+}
+
+#logos {
+  width: 100%;
+  height: 144px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* ============================== AGREGATOR SECTION ====================== */
+#agregator-section {
+  padding: 56px 163px;
+}
+
+#agregator-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+#agregator-section .frame{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+#agregator-section .frame img {
+  transition: transform 0.3s ease, font-weight 0.3s ease, color 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+#agregator-section .hover:hover .frame img, #agregator-section .hover:hover b  {
+  transform: scale(1.1);
+  font-weight: bold;
+  color: var(--first-color);
+}
+#agregator-section b {
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  /* ============================== HERO SECTION ====================== */
+  #hero {
+    height: 763px;
+    text-align: left;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+  }
+
+  #hero h6 {
+    font-size: 12px;
+    font-family: "montserrat-semibold";
+  }
+
+  /* ============================== MEKANISME SECTION ====================== */
+  #mekanisme-section {
+    height: 1381;
+    padding: 60px 0px;
+  }
+
+  #mekanisme-section h1 {
+    font-size: 36px;
+  }
+
+  .tgl {
+    text-align: left !important;
+    padding: 10px 0px !important;
+  }
+
+  /* ============================== AGREGATOR SECTION ====================== */
+  #agregator-section {
+    padding: 0px;
+  }
+
+  #agregator-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
